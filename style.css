@@ -1,0 +1,45 @@
+/* cores para usar  */
+
+/* marrom */
+/* #b65a29 */
+
+/* branco */
+/* #ffecc4 */
+
+.square{
+    background-color: #ffecc4;
+    height: 70px;
+    width: 70px;
+}
+
+.dad-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    /* alinhando o tabuleiro ao centro da pagina */
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    height: 560px;
+    /* 70px * 8 = 560 */
+    width: 560px;
+    /* ou seja, calculamos a área necessária para caber os 64 quadrados do tabuleiro */
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.files:nth-of-type(odd) .square:nth-of-type(even) {
+    background-color: #b65a29;
+}
+
+.files:nth-of-type(even) .square:nth-of-type(odd) {
+    background-color: #b65a29;
+}
+
+img{
+    width: 100%;
+}
