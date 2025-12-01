@@ -1,4 +1,4 @@
-//console.log("aoba")
+//Criando "range" das peças
 
 const arrayOfPawn = [];
 console.log(filesNameArray);
@@ -20,5 +20,20 @@ for(const i of arrayOfPawn){
             stepsSquare.push(document.getElementById(currentId[0] + change));
         }
         console.log(stepsSquare);
+        highlightingCircle(stepsSquare);
     });
 }
+
+//função para adicionar "highlighting"
+
+const highlightingCircle = function ([first, second])  {
+    let circle = document.createElement("div");
+    let circle2 = document.createElement("div");
+    circle.setAttribute("class","circle");
+    circle2.setAttribute("class","circle");
+    first.appendChild(circle);
+    second.appendChild(circle2);
+    console.log(first, second);
+    first.classList.add("flex");
+    second.classList.add("flex");
+};

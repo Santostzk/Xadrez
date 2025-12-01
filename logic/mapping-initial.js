@@ -1,4 +1,4 @@
-//selecting files usind dom and staring into array
+//selecionando arquivos usando o DOM e salvando em um array
 
 const arrayOfFiles = document.querySelectorAll(".files");
 

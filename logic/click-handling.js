@@ -1,4 +1,4 @@
-
+//Exibe a casa que foi selecionada, dando destaque se tiver as pelas dentro da casa
 const allSquares = document.getElementsByClassName("square");//console.log(allSquares);
 
 const clickedElements = [];
