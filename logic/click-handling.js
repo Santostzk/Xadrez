@@ -23,7 +23,7 @@ for(const x of allSquares) {
         innerHtmlOfElement.includes("Brancas")
        ) {
         //definindo a cor do casa do tabuleiro em que está a peça que foi selecionada
-        document.getElementById(idOfElement).style.backgroundColor = "yellow";
+        document.getElementById(idOfElement).style.backgroundColor = "#f6ff6f";
         clickedElements.push(x);
        }
     });
